@@ -7,7 +7,7 @@
 "   ╚════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝      ╚═══╝  ╚═╝╚═╝     ╚═╝
 "
 
-" no vi compadibility
+" no vi compatiblity
 set nocompatible
 
 " load plugins
