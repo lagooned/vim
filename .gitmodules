@@ -4,3 +4,6 @@
 [submodule "pack/jengler/start/vim-vinegar"]
 	path = pack/jengler/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
+[submodule "pack/jengler/start/vim-surround"]
+	path = pack/jengler/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
