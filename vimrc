@@ -32,3 +32,7 @@ set expandtab
 set nobackup
 set matchpairs+=<:>
 set relativenumber
+
+" leader
+map <Space> <Leader>
+map <Leader>pf :CtrlP<Enter>
