@@ -35,4 +35,30 @@ set relativenumber
 
 " leader
 map <Space> <Leader>
-map <Leader>pf :CtrlP<Enter>
+
+" config
+map <Leader>cc :source $MYVIMRC<Enter>
+map <Leader>ci :e $MYVIMRC<Enter>
+
+" file
+map <Leader>ff :CtrlP<Enter>
+map <Leader>fs :w<Enter>
+map <Leader>fw :w<Space>
+
+" toggles
+map <Leader>tt :set wrap!<Enter>
+
+" window
+map <Leader>wc <C-w>c
+map <Leader>wo <C-w>o
+map <Leader>ws <C-w>s
+map <Leader>wv <C-w>v
+map <Leader>wh <C-w>h
+map <Leader>wl <C-w>l
+map <Leader>wj <C-w>j
+map <Leader>wk <C-w>k
+
+" quit
+map <Leader>qq :q<Enter>
+map <Leader>qQ :qa!<Enter>
+map <Leader>qc :cq<Enter>
