@@ -58,6 +58,14 @@ map <Leader>wl <C-w>l
 map <Leader>wj <C-w>j
 map <Leader>wk <C-w>k
 
+" git
+map <Leader>ps :Gstatus<Enter>
+map <Leader>pp :Gpush<Enter>
+map <Leader>pf :Gfetch<Enter>
+map <Leader>pr :Grebase<Enter>
+map <Leader>pm :Gmerge<Enter>
+map <Leader>pb :Gblame<Enter>
+
 " quit
 map <Leader>qq :q<Enter>
 map <Leader>qQ :qa!<Enter>
