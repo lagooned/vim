@@ -66,6 +66,7 @@ map <Leader>pf :Gfetch<Enter>
 map <Leader>pr :Grebase<Enter>
 map <Leader>pm :Gmerge<Enter>
 map <Leader>pb :Gblame<Enter>
+map <Leader>pg :!git grep<Space>
 
 " quit
 map <Leader>qq :q<Enter>
