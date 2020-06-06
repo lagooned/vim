@@ -32,6 +32,7 @@ set expandtab
 set nobackup
 set matchpairs+=<:>
 set relativenumber
+set autochdir
 
 " leader
 map <Space> <Leader>
