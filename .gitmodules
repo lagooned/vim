@@ -1,6 +1,3 @@
-[submodule "pack/jengler/start/vim-airline"]
-	path = pack/jengler/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
 [submodule "pack/jengler/start/vim-vinegar"]
 	path = pack/jengler/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
