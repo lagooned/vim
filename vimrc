@@ -8,7 +8,7 @@
 "
 
 " no vi compatiblity
-set nocompatible
+set nocp
 
 " load plugins
 filetype off
@@ -21,7 +21,7 @@ set history=1000
 set undolevels=1000
 set showcmd
 set incsearch
-set ignorecase
+set ic
 set smartcase
 set ruler
 set autoindent
