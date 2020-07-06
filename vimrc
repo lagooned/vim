@@ -50,6 +50,7 @@ map <Leader>fw :w<Space>
 map <Leader>tt :set wrap!<Enter>
 
 " window
+map <Leader>ww <C-w><C-w>
 map <Leader>wc <C-w>c
 map <Leader>wo <C-w>o
 map <Leader>ws <C-w>s
