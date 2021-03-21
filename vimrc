@@ -33,6 +33,7 @@ set nobackup
 set matchpairs+=<:>
 set relativenumber
 set autochdir
+set listchars=tab:>\ ,eol:$,space:.
 
 " leader
 map <Space> <Leader>
@@ -48,6 +49,7 @@ map <Leader>fw :w<Space>
 
 " toggles
 map <Leader>tt :set wrap!<Enter>
+map <Leader>tw :set list!<Enter>
 
 " window
 map <Leader>ww <C-w><C-w>
