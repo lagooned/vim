@@ -51,6 +51,7 @@ map <Leader>fw :w<Space>
 " toggles
 map <Leader>tt :set wrap!<Enter>
 map <Leader>tw :set list!<Enter>
+map <Leader>tl :set relativenumber!<Enter>
 
 " window
 map <Leader>ww <C-w><C-w>
