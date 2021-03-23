@@ -45,6 +45,7 @@ map <Leader>ci :e $MYVIMRC<Enter>
 " file
 map <Leader>ff :e **/
 map <Leader>fs :w<Enter>
+map <Leader>fW :x<Enter>
 map <Leader>fw :w<Space>
 
 " toggles
