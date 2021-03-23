@@ -64,12 +64,13 @@ map <Leader>wj <C-w>j
 map <Leader>wk <C-w>k
 
 " git
-map <Leader>ps :Gstatus<Enter>
-map <Leader>pp :Gpush<Enter>
-map <Leader>pf :Gfetch<Enter>
-map <Leader>pr :Grebase<Enter>
-map <Leader>pm :Gmerge<Enter>
-map <Leader>pb :Gblame<Enter>
+map <Leader>ps :!git status<Enter>
+map <Leader>pp :!git push<Space>
+map <Leader>pf :!git fetch<Space>
+map <Leader>pdc :!git diff --cached<Enter>
+map <Leader>pdd :!git diff<Enter>
+map <Leader>pap :!git add --patch<Enter>
+map <Leader>pr :!git rebase<Space>
 map <Leader>pg :!git grep<Space>
 
 " netrw
