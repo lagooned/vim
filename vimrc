@@ -71,6 +71,9 @@ map <Leader>pm :Gmerge<Enter>
 map <Leader>pb :Gblame<Enter>
 map <Leader>pg :!git grep<Space>
 
+" netrw
+nmap - :o .<Enter>
+
 " quit
 map <Leader>qq :q<Enter>
 map <Leader>qQ :qa!<Enter>
