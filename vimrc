@@ -38,6 +38,9 @@ set listchars=tab:>\ ,eol:$,space:.
 " leader
 map <Space> <Leader>
 
+" shell
+map <Leader>` :sh<Enter>
+
 " config
 map <Leader>cc :source $MYVIMRC<Enter>
 map <Leader>ci :e $MYVIMRC<Enter>
