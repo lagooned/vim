@@ -91,6 +91,9 @@ map <Leader>qq :q<Enter>
 map <Leader>qQ :qa!<Enter>
 map <Leader>qc :cq<Enter>
 
+" help
+map <Leader>hm :map <leader><Enter>
+
 " shell cmd output
 function! s:RunShellCommand(cmdline)
   echo a:cmdline
