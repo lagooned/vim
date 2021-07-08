@@ -34,6 +34,7 @@ set matchpairs+=<:>
 set relativenumber
 set autochdir
 set listchars=tab:>\ ,eol:$,space:.
+set notimeout
 
 " leader
 map <Space> <Leader>
@@ -47,7 +48,8 @@ map <Leader>cc :source $MYVIMRC<Enter>
 map <Leader>ci :e $MYVIMRC<Enter>
 
 " file
-map <Leader>ff :e **/
+map <Leader>ff :e<Space>
+map <Leader>fz :e **/*
 map <Leader>fs :w<Enter>
 map <Leader>fW :x<Enter>
 map <Leader>fw :w<Space>
@@ -70,13 +72,16 @@ map <Leader>wk <C-w>k
 
 " git
 map <Leader>ps :!git status<Enter>
-map <Leader>pp :!git push<Space>
+map <Leader>pP :!git push<Space>
+map <Leader>pp :e ~/code<Enter>
 map <Leader>pf :!git fetch<Space>
 map <Leader>pdc :!git diff --cached<Enter>
 map <Leader>pdd :!git diff<Enter>
 map <Leader>pap :!git add --patch<Enter>
 map <Leader>pr :!git rebase<Space>
 map <Leader>pg :Shell git grep -nIi<Space>
+map <Leader>pca :!git commit --verbose --amend --reset-author<Enter>
+map <Leader>pcc :!git commit --verbose<Enter>
 
 " netrw
 nmap - :o .<Enter>
