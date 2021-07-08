@@ -40,6 +40,7 @@ map <Space> <Leader>
 
 " shell
 map <Leader>` :sh<Enter>
+map <Leader>! :Shell<Space>
 
 " config
 map <Leader>cc :source $MYVIMRC<Enter>
@@ -75,7 +76,7 @@ map <Leader>pdc :!git diff --cached<Enter>
 map <Leader>pdd :!git diff<Enter>
 map <Leader>pap :!git add --patch<Enter>
 map <Leader>pr :!git rebase<Space>
-map <Leader>pg :!git grep<Space>
+map <Leader>pg :Shell git grep -nIi<Space>
 
 " netrw
 nmap - :o .<Enter>
@@ -84,3 +85,23 @@ nmap - :o .<Enter>
 map <Leader>qq :q<Enter>
 map <Leader>qQ :qa!<Enter>
 map <Leader>qc :cq<Enter>
+
+" shell cmd output
+function! s:RunShellCommand(cmdline)
+  echo a:cmdline
+  let expanded_cmdline = a:cmdline
+  for part in split(a:cmdline, ' ')
+     if part[0] =~ '\v[%#<]'
+        let expanded_part = fnameescape(expand(part))
+        let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
+     endif
+  endfor
+  botright new
+  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+  call setline(1, '$: ' .expanded_cmdline)
+  call setline(2,substitute(getline(1),'.','-','g'))
+  execute '$read !'. expanded_cmdline
+  setlocal nomodifiable
+  1
+endfunction
+command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
